@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" class="dark>
+<html lang="es" class="dark">
 <head>
-    <meta charset=" UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="./img/favicon.ico" />
-<link rel="stylesheet" href="./css/style.css">
-<link
-  href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-  rel="stylesheet" />
-<title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <title>Portafolio</title>
 </head>
 
 <body class="dark">
-  <!-- into section -->
+  <!-- intro section -->
   <div
     class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
     <!-- navbar -->
@@ -21,85 +22,86 @@
       <div class="container mx-auto py-5 flex items-center justify-between">
         <div class="flex items-center gap-2">
           <img class="w-8 mr-px" src="./img/icon-512x512.png" alt="" />
-          <span class="text-2xl font-bold text-indigo-900 dark:text-white" onclick="myFunction()">Salvador Alvarez
-          </span>
+          <span class="text-2xl font-bold text-indigo-900 dark:text-white" onclick="myFunction()">Salvador Alvarez</span>
         </div>
+
         <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase">
           <li class="hover:text-gray-500">
-            <a href="#">homepage</a>
+            <a href="#">Inicio</a>
           </li>
           <li class="hover:text-gray-500">
-            <a href="#about">about me</a>
+            <a href="#about">Sobre mí</a>
           </li>
           <li class="hover:text-gray-500">
-            <a href="#services">Studies</a>
+            <a href="#services">Estudios</a>
           </li>
           <li class="hover:text-gray-500">
-            <a href="#works">works</a>
+            <a href="#works">Proyectos</a>
           </li>
           <li class="hover:text-gray-500">
-            <a href="#contact">contact</a>
+            <a href="#contact">Contacto</a>
           </li>
-
         </ul>
+
         <img id="moon" src="./img/moon.png" class="hidden md:block w-5 cursor-pointer" alt="" />
+
         <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
           <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
           <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
           <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
         </div>
+
         <ul id="menu"
           class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
           <li>
-            <a id="hLink" href="#">homepage</a>
+            <a id="hLink" href="#">Inicio</a>
           </li>
           <li>
-            <a id="hLink" href="#about">about me</a>
+            <a id="hLink" href="#about">Sobre mí</a>
           </li>
           <li>
-            <a id="hLink" href="#services">Studies</a>
+            <a id="hLink" href="#services">Estudios</a>
           </li>
           <li>
-            <a id="hLink" href="#works">works</a>
+            <a id="hLink" href="#works">Proyectos</a>
           </li>
           <li>
-            <a id="hLink" href="#contact">contact</a>
+            <a id="hLink" href="#contact">Contacto</a>
           </li>
           <li>
-            <a id="hLink" onclick="myFunction()" href="#">Dark mode</a>
+            <a id="hLink" onclick="myFunction()" href="#">Modo oscuro</a>
           </li>
-
         </ul>
       </div>
     </nav>
-    <!-- intro content -->
+
     <!-- image -->
-
-
     <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="" alt="" />
-
 
     <!-- circle -->
     <div
       class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10">
     </div>
+
     <!-- animated text -->
     <div
       class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
-      <span class="text-gray-600">Developer</span>
+      <span class="text-gray-600">Desarrollador</span>
       <p id="text" class="text-red-500"></p>
     </div>
+
     <!-- texts -->
     <div
       class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3">
-      <h1 class="text-4xl font-bold text-indigo-900">Hello everyone I am Salvador Alvarez</h1>
+      <h1 class="text-4xl font-bold text-indigo-900 dark:text-white">Hola, soy Salvador Alvarez</h1>
       <p class="text-gray-400">
-        I'm an engineer in software development and management and passionate about technology
+        Soy Ingeniero en Desarrollo y Gestión de Software, apasionado por la tecnología y por crear soluciones
+        funcionales y escalables.
       </p>
-      <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contact">Contact me
-      </a>
+      <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contact">Contáctame</a>
     </div>
   </div>
+
   <!-- about -->
   <div id="about" class="px-10 dark:bg-slate-900">
     <div class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
@@ -110,27 +112,32 @@
           <img src="./img/portrait.png" alt="" />
         </div>
       </div>
+
       <!-- right -->
       <div class="my-auto flex flex-col gap-3">
-        <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
-        <h1 class="text-3xl font-medium dark:text-white">My skills</h1>
+        <h1 class="text-indigo-600 font-bold">SOBRE MÍ</h1>
+        <h1 class="text-3xl font-medium dark:text-white">Habilidades</h1>
 
         <p class="text-gray-400">
-          Hello, my name is Salvador Alvarez and I am an engineer in software development and management at the
-          Technological University of Nogales and these are some of the skills I have developed.
+          Hola, soy Salvador Alvarez. Soy Ingeniero en Desarrollo y Gestión de Software por la Universidad Tecnológica de Nogales.
+          Estas son algunas de las habilidades que he desarrollado a lo largo de mi formación y proyectos.
         </p>
+
         <h2 class="text-gray-400 font-medium">HTML</h2>
         <div class="w-full bg-gray-200 h-1.5 rounded-md">
           <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
         </div>
-        <h2 class="text-gray-400 font-medium">Javascript</h2>
+
+        <h2 class="text-gray-400 font-medium">JavaScript</h2>
         <div class="w-full bg-gray-200 h-1.5 rounded-md">
           <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
         </div>
-        <h2 class="text-gray-400 font-medium">Computer Network</h2>
+
+        <h2 class="text-gray-400 font-medium">Redes de computadoras</h2>
         <div class="w-full bg-gray-200 h-1.5 rounded-md">
           <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
         </div>
+
         <h2 class="text-gray-400 font-medium">React</h2>
         <div class="w-full bg-gray-200 h-1.5 rounded-md">
           <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
@@ -140,10 +147,12 @@
         <div class="w-full bg-gray-200 h-1.5 rounded-md">
           <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
         </div>
+
         <h2 class="text-gray-400 font-medium">Java</h2>
         <div class="w-full bg-gray-200 h-1.5 rounded-md">
           <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
         </div>
+
         <h2 class="text-gray-400 font-medium">C#</h2>
         <div class="w-full bg-gray-200 h-1.5 rounded-md">
           <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
@@ -158,281 +167,217 @@
         <div class="w-full bg-gray-200 h-1.5 rounded-md">
           <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
         </div>
-
-      
       </div>
     </div>
   </div>
-
 
   <!-- services -->
   <div id="services" class="dark:bg-slate-900">
     <div class="container mx-auto">
       <!-- top -->
       <div class="flex flex-col gap-3 items-center">
-        <h1 class="text-indigo-600 font-bold">Estudies</h1>
-        <h1 class="text-3xl dark:text-white">I'm constantly updating and learning new things</h1>
-
+        <h1 class="text-indigo-600 font-bold">ESTUDIOS</h1>
+        <h1 class="text-3xl dark:text-white">Me mantengo en constante aprendizaje y actualización</h1>
       </div>
+
       <!-- bottom -->
       <div class="p-5 sm:p-0 flex flex-wrap justify-between">
         <!-- card -->
         <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
           <img class="w-22" src="./img/google1.png" alt="" />
-          <h1 class="font-medium text-lg dark:text-white mt-3 tex">Sopport it</h1>
-          <p class="text-gray-400">
-
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="./img/pdf/diploma-google.pdf">View</a>
+          <h1 class="font-medium text-lg dark:text-white mt-3 tex">Soporte de TI</h1>
+          <p class="text-gray-400"></p>
+          <a class="text-indigo-600 font-semibold text-sm" href="./img/pdf/diploma-google.pdf">Ver certificado</a>
         </div>
 
         <!-- card -->
         <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
           <img class="w-22" src="./img/javacurso.jpg" alt="" />
-          <h1 class="font-medium text-lg dark:text-white mt-3 tex">java</h1>
-          <p class="text-gray-400">
-
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="./img/pdf/javamaster.pdf">View</a>
+          <h1 class="font-medium text-lg dark:text-white mt-3 tex">Java</h1>
+          <p class="text-gray-400"></p>
+          <a class="text-indigo-600 font-semibold text-sm" href="./img/pdf/javamaster.pdf">Ver certificado</a>
         </div>
-        <!-- card -->
-
-       
-
 
         <!-- card -->
         <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
           <img class="w-22" src="./img/iot.png" alt="" />
-          <h1 class="font-medium text-lg dark:text-white mt-3 tex">Iot</h1>
-          <p class="text-gray-400">
-
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="./img/pdf/diploma-iot.pdf">View</a>
+          <h1 class="font-medium text-lg dark:text-white mt-3 tex">IoT</h1>
+          <p class="text-gray-400"></p>
+          <a class="text-indigo-600 font-semibold text-sm" href="./img/pdf/diploma-iot.pdf">Ver certificado</a>
         </div>
+
         <!-- card -->
-
-
-          <!-- card -->
-          <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
-            <img class="w-22" src="./img/csharp.jpg" alt="" />
-            <h1 class="font-medium text-lg dark:text-white mt-3 tex">Python, Java && C#</h1>
-            <p class="text-gray-400">
-  
-            </p>
-            <a class="text-indigo-600 font-semibold text-sm" href="./img/pdf/javapdf.pdf">View</a>
-          </div>
-          <!-- card -->
-
+        <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+          <img class="w-22" src="./img/csharp.jpg" alt="" />
+          <h1 class="font-medium text-lg dark:text-white mt-3 tex">Python, Java y C#</h1>
+          <p class="text-gray-400"></p>
+          <a class="text-indigo-600 font-semibold text-sm" href="./img/pdf/javapdf.pdf">Ver certificado</a>
+        </div>
 
         <!-- card -->
         <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
           <img class="w-22" src="./img/jsReact.png" alt="" />
-          <h1 class="font-medium text-lg dark:text-white mt-3 tex">React js</h1>
-          <p class="text-gray-400">
-
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="./img/diploma-react-practico.pdf">View</a>
+          <h1 class="font-medium text-lg dark:text-white mt-3 tex">React.js</h1>
+          <p class="text-gray-400"></p>
+          <a class="text-indigo-600 font-semibold text-sm" href="./img/diploma-react-practico.pdf">Ver certificado</a>
         </div>
+
         <!-- card -->
         <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
           <img class="w-22" src="./img/platzi1.png" alt="" />
           <h1 class="font-medium text-lg dark:text-white mt-3 tex">HTML / CSS</h1>
-          <p class="text-gray-400">
-
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="./img//diploma-html-css.pdf">View</a>
+          <p class="text-gray-400"></p>
+          <a class="text-indigo-600 font-semibold text-sm" href="./img//diploma-html-css.pdf">Ver certificado</a>
         </div>
+
         <!-- card -->
         <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
           <img class="w-22" src="./img/Platzi2.png" alt="" />
-          <h1 class="font-medium text-lg dark:text-white mt-3 tex">Git / Github</h1>
-          <p class="text-gray-400">
-
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="img/diploma-git-github.pdf">View</a>
+          <h1 class="font-medium text-lg dark:text-white mt-3 tex">Git / GitHub</h1>
+          <p class="text-gray-400"></p>
+          <a class="text-indigo-600 font-semibold text-sm" href="img/diploma-git-github.pdf">Ver certificado</a>
         </div>
+
         <!-- card -->
         <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
           <img class="w-22" src="./img/internet.png" alt="" />
-          <h1 class="font-medium text-lg dark:text-white mt-3 tex">Redes/ Neteworks</h1>
-          <p class="text-gray-400">
-
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="img/diploma-redes.pdf">View</a>
+          <h1 class="font-medium text-lg dark:text-white mt-3 tex">Redes</h1>
+          <p class="text-gray-400"></p>
+          <a class="text-indigo-600 font-semibold text-sm" href="img/diploma-redes.pdf">Ver certificado</a>
         </div>
-        <!-- card -->
-      
-
-
 
         <!-- card -->
         <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
           <img class="w-22" src="./img/sql.jpg" alt="" />
           <h1 class="font-medium text-lg dark:text-white mt-3 tex">SQL</h1>
-          <p class="text-gray-400">
-
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="./img/pdf/pdf-sql.pdf">View</a>
+          <p class="text-gray-400"></p>
+          <a class="text-indigo-600 font-semibold text-sm" href="./img/pdf/pdf-sql.pdf">Ver certificado</a>
         </div>
-        <!-- card -->
-
-
-
       </div>
     </div>
   </div>
-
 
   <!-- works -->
   <div id="works" class="py-40 dark:bg-slate-900">
     <div class="container mx-auto">
       <!-- top -->
       <div class="flex flex-col gap-3 items-center">
-        <h1 class="text-indigo-600 font-bold">PORTFOLIO</h1>
-        <h1 class="text-3xl dark:text-white">Works & Projects</h1>
+        <h1 class="text-indigo-600 font-bold">PORTAFOLIO</h1>
+        <h1 class="text-3xl dark:text-white">Proyectos y trabajos</h1>
         <p class="w-1/2 text-center text-gray-400">
-          These are some of my Projects
+          Estos son algunos de mis proyectos.
         </p>
       </div>
+
       <!-- bottom -->
       <div class="p-5 sm:p-0 flex flex-wrap justify-between">
         <!-- card -->
         <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/peliculas.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">SPA netflix style</h1>
-          <p class="text-gray-400">
-            netflix style practice
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/movies/">View Project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">SPA estilo Netflix</h1>
+          <p class="text-gray-400">Interfaz inspirada en Netflix como práctica de maquetación y navegación.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/movies/">Ver proyecto</a>
         </div>
-        <!-- card -->
-
 
         <!-- card -->
         <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/spring.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">Crud Api Spring and Mysql</h1>
-          <p class="text-gray-400">
-            api using java spring, mysql and postman
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://github.com/sao29/crud-api-spring">View
-            Project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">API CRUD con Spring y MySQL</h1>
+          <p class="text-gray-400">API desarrollada con Spring Boot, MySQL y pruebas con Postman.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://github.com/sao29/crud-api-spring">Ver proyecto</a>
         </div>
-        <!-- card -->
-
-
 
         <!-- card -->
         <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/yarda.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">React SPA/ Ecommerce</h1>
-          <p class="text-gray-400">
-            Desing of eccomerce using react
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/yarda/">View Project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">SPA e-commerce en React</h1>
+          <p class="text-gray-400">Diseño de e-commerce desarrollado con React.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/yarda/">Ver proyecto</a>
         </div>
+
         <!-- card -->
         <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/tailwind.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">SPA / Taillwind</h1>
-          <p class="text-gray-400">
-            Place to visit single page app design
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/prueba-tailwind/">View
-            Project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">SPA con Tailwind</h1>
+          <p class="text-gray-400">Diseño de landing “lugares por visitar” en una sola página.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/prueba-tailwind/">Ver proyecto</a>
         </div>
+
         <!-- card -->
         <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/js-practico.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">Vanilla js</h1>
-          <p class="text-gray-400">
-
-            perform basic math functions in js
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/jsPractico/">View Project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">JavaScript (Vanilla)</h1>
+          <p class="text-gray-400">Funciones matemáticas básicas desarrolladas con JavaScript.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/jsPractico/">Ver proyecto</a>
         </div>
+
         <!-- card -->
-        <div class="w-full md:w-5/12 lg:w-2/5  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+        <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/todopic.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">React / TOdo app</h1>
-          <p class="text-gray-400">
-            App todo usign React
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/React-lista-de-tareas/">View
-            project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">App de tareas (To‑Do) con React</h1>
+          <p class="text-gray-400">Aplicación de tareas creada con React.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/React-lista-de-tareas/">Ver proyecto</a>
         </div>
+
         <!-- card -->
         <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/Rick.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">Api fect / Rick and Morty</h1>
-          <p class="text-gray-400">
-            test api consumption with React
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/rick-and-morty/">View
-            project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">Consumo de API: Rick and Morty</h1>
+          <p class="text-gray-400">Consumo de API con React usando fetch.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/rick-and-morty/">Ver proyecto</a>
         </div>
+
         <!-- card -->
         <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/animacionJs.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">Practice / Animation Css</h1>
-          <p class="text-gray-400">
-
-            creating animations using js
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/jsLego">View Project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">Práctica: animaciones con JavaScript</h1>
+          <p class="text-gray-400">Animaciones creadas con JavaScript.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/jsLego">Ver proyecto</a>
         </div>
+
         <!-- card -->
         <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/conejosCss.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">Practice / Animation js</h1>
-          <p class="text-gray-400">
-
-            creating animations using Css
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/cssAnimacion/">View project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">Práctica: animaciones con CSS</h1>
+          <p class="text-gray-400">Animaciones creadas con CSS.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/cssAnimacion/">Ver proyecto</a>
         </div>
+
         <!-- card -->
         <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/img3.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">SPA /Angular</h1>
-          <p class="text-gray-400">
-            Creating a web page using Angular
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://agular-pwa-uno.web.app/">View project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">SPA con Angular</h1>
+          <p class="text-gray-400">Aplicación web creada con Angular.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://agular-pwa-uno.web.app/">Ver proyecto</a>
         </div>
+
         <!-- card -->
         <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/img1.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">Design of google</h1>
-          <p class="text-gray-400">
-            Design of google.
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/plantillaGoogle/">View
-            Project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">Diseño tipo Google</h1>
+          <p class="text-gray-400">Maquetación de una interfaz inspirada en Google.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/plantillaGoogle/">Ver proyecto</a>
         </div>
+
         <!-- card -->
         <div class="w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
           <img src="./img/img2.png" />
           <br>
-          <h1 class="font-medium text-lg dark:text-white text-center">Practice/ Mobile First</h1>
-          <p class="text-gray-400">
-            Creating website using mobile first principles
-          </p>
-          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/Mobile-First">View project</a>
+          <h1 class="font-medium text-lg dark:text-white text-center">Práctica: Mobile First</h1>
+          <p class="text-gray-400">Sitio creado siguiendo principios de diseño Mobile First.</p>
+          <a class="text-indigo-600 font-semibold text-sm" href="https://sao29.github.io/Mobile-First">Ver proyecto</a>
         </div>
-        <!-- card -->
-
       </div>
     </div>
   </div>
@@ -442,36 +387,31 @@
     <div class="container mx-auto">
       <!-- top -->
       <div class="flex flex-col gap-3 items-center">
-        <h1 class="text-indigo-600 font-bold">CONTACT</h1>
-        <h1 class="text-3xl dark:text-white">Have a Question?</h1>
+        <h1 class="text-indigo-600 font-bold">CONTACTO</h1>
+        <h1 class="text-3xl dark:text-white">¿Tienes una pregunta?</h1>
         <p class="w-1/2 text-center text-gray-400">
-          Do you have an idea? Let's discuss it and see what we can do
-          together.
+          ¿Tienes una idea o proyecto en mente? Conversemos y veamos cómo puedo ayudarte.
         </p>
       </div>
+
       <!-- bottom -->
       <form class="mt-5 p-8 flex flex-col gap-5 items-center">
         <input
           class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
-          type="text" placeholder="Name Surname" />
+          type="text" placeholder="Nombre y apellido" />
         <input
           class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
-          type="email" placeholder="Email" />
+          type="email" placeholder="Correo electrónico" />
         <textarea
           class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
-          cols="30" rows="10" placeholder="Message..."></textarea>
-        <!-- <button
-            class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer"
-            mailTo:sao.95@hotmail.com
-          >
-            Submit
-          </button> -->
-        <a href="mailTo:sao.95@hotmail.com"
-          class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer text-center">Contact
-          me!</a>
+          cols="30" rows="10" placeholder="Mensaje..."></textarea>
+
+        <a href="mailto:sao.95@hotmail.com"
+          class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer text-center">¡Escríbeme!</a>
       </form>
     </div>
   </div>
+
   <!-- footer -->
   <div class="w-full bg-gray-800">
     <div class="container mx-auto py-5 flex items-center justify-between">
@@ -479,7 +419,7 @@
         <img class="w-8" src="./img/icon-512x512.png" alt="" />
         <span class="text-2xl font-bold text-white">Salvador Alvarez</span>
       </div>
-      <span class="hidden md:block font-medium text-white">Hava nice day 🧑‍💻</span>
+      <span class="hidden md:block font-medium text-white">Que tengas un excelente día.</span>
       <div class="flex gap-2">
         <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
         <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
@@ -488,8 +428,8 @@
       </div>
     </div>
   </div>
+
   <script src="./src/index.js"></script>
   <script src="./src/autoTyping.js"></script>
 </body>
-
 </html>
